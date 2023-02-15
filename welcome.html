@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>welcome page</title>
+    <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome</h1>
+        
+         <div class="name">
+             <div class="fname"> <h2 id="fname">Geetansh</h2></div>
+             <div class="lname"> <h2 id="lname">Bhatnagar</h2></div>
+         </div>
+            <script>
+                let fname= localStorage.getItem("fname");
+                let lname= localStorage.getItem("lname");
+              
+                document.getElementById("fname").innerHTML= fname;
+                document.getElementById("lname").innerHTML= lname;
+            </script>
+    </div>
+</body>
+</html>

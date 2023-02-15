@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body onload="document.myForm.reset();">
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="/welcome.html" name="myForm" onsubmit="return validateForm()" method="GET">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" name="fname" placeholder="Enter your First name" >
+          </div>
+          <div class="input-box">
+            <span class="details">Last name</span>
+            <input type="text" name="lname" placeholder="Enter your Last name" >
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" name="email" placeholder="Enter your email" >
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" name="pass" placeholder="Enter your password" >
+          </div>
+        
+        </div>
+        
+        <div class="button">
+          <input type="submit" value="Register" >
+        </div>
+      </form>
+    </div>
+  </div>
+<script src="index.js"></script>
+</body>
+</html>
